@@ -1,0 +1,41 @@
+A-Frame
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"> </script>
+● AR.js
+<script
+src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
+></script>
+● Bootstrap
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJ
+lSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+● SweetAlert
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+● Gesture Detection (for Scale and Rotation)
+<script
+src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script
+>
+● Local StyleSheet
+<link href="./style.css" rel="stylesheet" />
+● Local JavaScript Files
+<script src="./js/addButtons.js"></script>
+<script src="./js/markerhandler.js"></script>
+<script src="./js/addMarkers.js"></script>
+var titlePlane = document.createElement("a-plane");
+      titlePlane.setAttribute("id", `title-plane-${dish.id}`);
+      titlePlane.setAttribute("position", { x: 0, y: 0.89, z: 0.02 });
+      titlePlane.setAttribute("rotation", { x: 0, y: 0, z: 0 });
+      titlePlane.setAttribute("width", 1.69);
+      titlePlane.setAttribute("height", 0.3);
+      titlePlane.setAttribute("material", { color: "#F0C30F" });
+      mainPlane.appendChild(titlePlane);
+var marker = document.createElement("a-marker");   
+      marker.setAttribute("id", dish.id);
+      marker.setAttribute("type", "pattern");
+      marker.setAttribute("url", dish.marker_pattern_url);
+      marker.setAttribute("cursor", {
+        rayOrigin: "mouse"
+      });
+
+titlePlane.setAttribute("id", `title-plane-${dish.id}`);
